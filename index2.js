@@ -6,7 +6,7 @@ let flattenedDataset
 class Main{
      constructor(){
         this.columnConfigs = {}
-        this.batches = 4;
+        this.batches = 3;
 
 
 
@@ -99,7 +99,7 @@ class Main{
         while(1){
             AllmodelCount++;
             let index = 0
-            for(var i = 3; i <  this.loadedModels.length;i++){
+            for(var i = 1; i <  this.loadedModels.length;i++){
             //for(let model of this.loadedModels){
             let model = this.loadedModels[i]
             console.log(`training model ${this.allModelConfig[i].name}`)
